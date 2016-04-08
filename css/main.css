@@ -50,6 +50,22 @@ body {
   position: absolute;
   top: 0;
   width: 30px;
-
+  animation: twinkle 2s infinite alternate;
+  transform-origin: center center;
   background: url("../images/star.svg") no-repeat center center / contain transparent;
+}
+
+@keyframes twinkle {
+
+  0% {
+
+    width: 30px;
+    height: 30px;
+  }
+
+  100% {
+
+    width: 50px;
+    height: 50%;
+  }
 }
